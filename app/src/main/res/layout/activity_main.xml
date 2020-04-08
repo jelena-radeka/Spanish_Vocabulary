@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/good_aft"
+            android:text="Good Afternoon"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#fc6508"
+            tools:ignore="MissingConstraints"
+            android:onClick="goodAfter"/>
+        <Button
+            android:id="@+id/goodbye"
+            android:text="Goodbay"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#fc6508"
+            android:onClick="goodBye"/>
+        <Button
+            android:id="@+id/tomorrow"
+            android:text="See You tomorrow"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#ffee05"
+            android:onClick="tomorrow"/>
+        <Button
+            android:id="@+id/name"
+            android:text="What is Your name"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#ffee05"
+            android:onClick="name"/>
+        <Button
+            android:id="@+id/meet"
+            android:text="Nice to meet you"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#fc6508"
+            android:onClick="meet"/>
+        <Button
+            android:id="@+id/from"
+            android:text="Where are You from"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#fc6508"
+            android:onClick="from"/>
+
+
+
+
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
